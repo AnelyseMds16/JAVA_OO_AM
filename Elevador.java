@@ -90,7 +90,6 @@ public class Elevador{
         String endereco = ler.nextLine();
         BufferedReader leitura = new BufferedReader(new FileReader(endereco));
 
-        
         String a0 = leitura.readLine();
         String b0 = leitura.readLine();
         int a = Integer.parseInt(a0); //capacidade do elevador (no arquivo vem primeiro)
@@ -99,7 +98,10 @@ public class Elevador{
         obj.Inicializa(a,b);
 
 
-        int continuar = 0;
+
+        // ----códigos para testar o funcionamento do programa----
+
+        /* int continuar = 0;
         while(continuar != 1){
             System.out.println("Escolha opcao:");
             System.out.println("1. Sair");
@@ -132,11 +134,14 @@ public class Elevador{
             System.out.println("\n---Status do elevador---");
             System.out.println("Andar atual: " + obj.getAndarAtual());
             System.out.println("Total de pessoas: " + obj.getQuantidadePessoas() + "\n" );
-        }
+        } */
 
+        //
         
         leitura.close();
         ler.close();
+
+
     }
 
 }
